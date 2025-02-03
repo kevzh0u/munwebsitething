@@ -49,7 +49,7 @@
       }
 
       .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("michael-photo.png");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/venue.png");
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -108,7 +108,6 @@
       }
 
       .modal-content {
-        display: block;
         background-color: #fefefe;
         margin: auto;
         padding: 20px;
@@ -138,7 +137,72 @@
   <header id="header" class="header align-items-center fixed-top">
     <div class="announcement"><h4>BCMUN 2023 has been cancelled.</h4></div>
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+      <nav id="navbar" class="navbar">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li class="dropdown">
+                  <a href="about"><span>About Us</span></a>
+                  <ul>
+                      <li><a href="about">About BCMUN</a></li>
+                      <li><a href="secretariat">Secretariat Team</a></li>
+                      <li><a href="conference-preparation">Conference Preparation</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="committee"><span>Conference</span></a>
+                  <ul>
+                      <li><a href="schedule">Schedule</a></li>
+                      <li><a href="committee">Committees</a></li>
+                      <li><a href="conference-policies">Conference Policies</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="registration"><span>Registration</span></a>
+                  <ul>
+                      <li><a href="registration">Registration Overview</a></li>
+                      <li><a href="registration-ended">Delegation Registration</a></li>
+                      <li><a href="registration-ended">Delegate Registration</a></li>
+                  </ul>
+              </li>
+              <li><a href="sponsors">Sponsors</a></li>
+              <li><a href="contact">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="position-relative">
+        <div class="show-on-desktop">
+          <a href="mailto:inquiries@bcmun.org" class="mx-2" style="font-size:24px"><span class="bi-envelope"></span></a>
+          <a href="https://www.instagram.com/bcmun2023/" class="mx-2" style="font-size:24px"><span class="bi-instagram"></span></a>
+        </div>
+        <div class="show-on-mobile">
+          <a href="mailto:inquiries@bcmun.org" style="font-size:24px"><span class="bi-envelope"></span></a>
+          <a href="https://www.instagram.com/bcmun2023/" style="font-size:24px"><span class="bi-instagram"></span></a>
+          <i class="bi mobile-nav-toggle bi-list"></i>
+        </div>
       </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1><center>BCMUN 2023 has been cancelled</center></h1>
+        <h5><center>Thank you for all your commitments and efforts when preparing for the conference.<br>We apologize sincerely about the cancellation and wish every delegate their best of luck on their Model United Nations journey.<br>Refund requests can be directed to Michael Xie, Secretary General, at sg@bcmun.org.</center></h5>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementByClassName("modal");
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
   </header>
 
   <main id="main">
@@ -162,15 +226,27 @@
 
     <section></section>
     <div class="center">
-      <p><strong>The following message is a personal statement from Michael Xie. The previous secretariat team is no longer affiliated to any capacity, including this message. The information and message below should be held responsible solely to Michael Xie, not the previous secretariat team.</strong></p>
-      <p>Dear Delegates, faculty advisors, and staff,</p>
-      <p>I hope that this message finds you well. As all of you now clearly know, your refunds have been withheld for a long time now— unacceptably long. I am here to let everyone know what is truly happening. BCMUN was completely financed by my family; its non profit corporation card was also under my family. However, due to legal issues not connected to BCMUN, my family has had absolutely all of its bank accounts frozen. This included the BCMUN account which contained the refunds. It is, indeed, true that I attempted to send refunds out through Stripe MULTIPLE times; however, they were consistently blocked. Only a very few refunds went through. My family is currently out of the country attempting to get our bank accounts unfrozen. We have currently been told to expect the date April 16th to be able to access our funds again. Currently, all of my family’s associated accounts— including trust funds— are not able to be accessed. This is the true reason why I have been unable to process anything into your accounts in the past months.</p>
-      <p>For those speculating that I simply took the money and ran, I urge you to consider whether there are any rational reasons for me to do that. I have lived in BC for numerous years now and plan to potentially attend university here. I have made countless friends and connections. I have started multiple different non profits and organizations in Vancouver. Do you believe that I would willingly throw away absolutely everything that I have done in the past half of my life just to steal the refunds? Regardless, my family is, again, hoping to be able to have our funds available for use again on April 16th. What you believe, however, is up to you. Once our accounts are unfrozen, I plan to refund everyone their delegates fees+200 CAD. I truly hope that all of you receive your refunds soon.</p>
-      <p>Best Regards,<br><img src="assets/img/sg-signature.png" alt="" style="padding:15px 0 15px 0"><br>Michael Xie</p>
+      <p><strong>Dear prospective Delegates and faculty advisors,</strong></p>
+      <p>My name is Michael Xie and it is with my utmost pleasure to welcome you to British Columbia Model United Nations (BCMUN), taking place on November 11th and 12th, 2023. This year's conference promises to be an exciting and rewarding experience for all participants, as we engage in lively debates, negotiate and draft resolutions, and tackle some of the world's most pressing issues. For the past two years, BCMUN has been hosting its annual iteration online - enabling delegates from all around the globe to participate. This upcoming third iteration of BCMUN marks its first time being held in person. We are excited to host this year's conference at the Paradox Hotel, a prestigious 5-star hotel rated the number one hotel in Vancouver.</p>
+      <p>The Paradox Hotel is ideally located in the heart of Vancouver, offering an exquisite hotel that boasts elegance and sophistication. This stunning setting is sure to provide a conducive atmosphere for fruitful discussions and deliberations. Moreover, BCMUN will host 6 committees this year, enabling delegates to debate historical topics from the Sino-Japanese War to urgent modern day issues like the Myanmar Civil War. Committees this year were carefully selected in order to ensure that participants have multiple intriguing committees to choose from. As delegates' past experiences will vary, with some being first time Model UN participants while others have attended dozens of conferences, each of the 6 committees are tailored to different skill levels. We hope that our comprehensive selection of committees and topics will enrich our delegates' knowledge.</p>
+      <p>The Secretariat team has been working tirelessly to prepare for this conference, and we are proud of the outstanding program that we have put together. Our team has carefully selected and prepared a wide range of thought-provoking topics, each of which will challenge delegates to think critically and creatively, as they work together to find solutions to complex problems.</p>
+      <p>Together with the Secretariat and Staff team, I am committed to creating an unforgettable experience for all participants that will have a lasting impact beyond the committee room. I truly hope that BCMUN will help you develop a stronger voice, cultivate an interest in global affairs, and most importantly, form life-long friendships. If you have any questions or concerns, please do not hesitate to contact me through my email sg@bcmun.org. I am excited to meet everyone at BCMUN 2023!</p>
+      <p>Sincerely,<br><img src="assets/img/sg-signature.png" alt="" style="padding:15px 0 15px 0"><br>Michael Xie<br>Secretary General, BCMUN Conference 2023</p>
     </div>
   </main>
 
- 
+  <footer id="footer" class="footer">
+      <div class="footer-legal">
+          <div class="container">
+            <div class="copyright">
+                <center>© Copyright <strong><span>BCMUN 2023</span></strong>. All Rights Reserved.</center>
+            </div>
+            <div class="credits">
+                <center>Website designed by Kevin Xu, USG IT '23.</center>
+            </div>
+          </div>
+      </div>
+  </footer>
 
   <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
