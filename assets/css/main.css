@@ -27,13 +27,13 @@ h6 {
 
 @media (min-width: 600px) {
   #main {
-    margin-top: 10px; /*150px for announcement*/
+    margin-top: 150px; /*150px for announcement*/
   }
 }
 
 @media (max-width: 599px) {
   #main {
-    margin-top: 10px; /*170px for announcement*/
+    margin-top: 160px; /*170px for announcement*/
   }
 }
 
@@ -94,7 +94,7 @@ section {
   color: #ffffff;
   text-align: center;
   padding: 8px 0px;
-  font-size:13pt;
+	font-size:13pt;
 }
 
 .announcement h4 a {
@@ -110,27 +110,27 @@ section {
 /*height 150px for announcement*/
 @media (min-width: 504px) {
   .header {
-    height: 10px;
+    height: 150px;
     transition: all 0.5s;
     z-index: 997;
     background: #FFFFFF;
   }
 
   .header.sticked {
-    height: 10px;
+    height: 150px;
   }
 }
 
 @media (max-width: 503px) {
   .header {
-    height: 10px;
+    height: 170px;
     transition: all 0.5s;
     z-index: 997;
     background: #FFFFFF;
   }
 
   .header.sticked {
-    height: 10px;
+    height: 170px;
   }
 }
 
@@ -144,6 +144,10 @@ section {
   font-weight: 700;
   color: var(--color-default);
   font-family: var(--font-primary);
+}
+
+section {
+  scroll-margin-top: 70px;
 }
 
 /*--------------------------------------------------------------
